@@ -1,0 +1,41 @@
+@mixin dashboard-login-view{
+
+.v-slot-header-label{
+	
+	.v-caption-on-top{
+		margin-bottom: -25px;
+	.v-captiontext{
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+	font-size: 250%;
+	}
+	}
+	max-height: 100px;
+	}
+.login-panel {
+		@include valo-panel-style;
+		background:#fcc632;
+		padding: round($v-unit-size / 1.5) round($v-unit-size / 1.5);
+		min-width: $v-font-size * 13;
+    	max-width: 90%;
+		@include animation(valo-animate-in-slide-up 800ms 10ms backwards, valo-animate-in-fade 600ms 100ms backwards);
+
+		> .v-spacing {
+      height: round($v-unit-size / 2);
+    }
+		}
+	
+	.v-margin-top {
+    padding-top: 0px; 
+    padding-bottom: 0px;
+	}
+
+	.v-slot-avatar{
+		
+		.avatar{
+			vertical-align: middle;
+			border-radius: 50%;
+			}
+		}
+	
+}
